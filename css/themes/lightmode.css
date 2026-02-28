@@ -1,0 +1,35 @@
+body {
+    background-color: #F7F7F7;
+}
+.container {
+    background-color: #E9E9E9;
+}
+.navbar {
+    background-color: #F7F7F7;
+}
+.navButton {
+    background-color: #E9E9E9;
+    color: #0A0A0A;
+}
+.navButton:hover {
+    background-color: #CCCCCC;
+}
+.content {
+    color: #0A0A0A;
+    background-color: #F7F7F7;
+}
+.corner {
+    color: rgb(54, 54, 54);
+    background-color: #00000000;
+}
+
+.dropdown-content.show button {
+    background-color: #EEEEEE;
+}
+.dropdown-content.show button:hover {
+    background-color: #CCCCCC;
+}
+.dropdown-content button {
+    color: #0A0A0A;
+    background-color: #F7F7F7;
+}

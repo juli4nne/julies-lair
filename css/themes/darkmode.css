@@ -1,0 +1,36 @@
+body {
+    background-color: #080808;
+}
+.container {
+    background-color: #161616;
+}
+.navbar {
+    background-color: #080808;
+}
+.navButton {
+    background-color: #161616;
+    color: whitesmoke;
+}
+.navButton:hover {
+    background-color: #333333;
+}
+.content {
+    color: whitesmoke;
+    background-color: #080808;
+}
+.corner {
+    color: rgb(153, 153, 153);
+    background-color: #00000000;
+}
+
+#themeDropdown button {
+    color: whitesmoke;
+    background-color: #080808;
+}
+#themeDropdown.show button {
+    background-color: #111111;
+}
+#themeDropdown.show button:hover,
+#themeDropdown button:hover {
+    background-color: #333333 !important;
+}

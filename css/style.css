@@ -1,0 +1,61 @@
+*, *::before, *::after {
+    font-family: ms gothic, "ms gothic alt", monospace;
+}
+.container {
+    margin: auto;
+    padding: 20px;
+    border-radius: 30px;
+    max-width: max(1000px, 70%);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 150px;
+    gap: 10px;
+}
+.navButton {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    transition: background-color 0.1s ease;
+}
+.content {
+    flex: 1;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 10px;
+    width: 100%;
+    height: calc(100vh - 76px);
+    background-repeat: no-repeat;
+    background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+    background-attachment: local, local, scroll, scroll;
+    word-wrap: break-word;
+    align-items: top;
+}
+.icon {
+    border-radius: 30px;
+    max-width: 150px;
+}
+.corner {
+    position: fixed; 
+    width: 88px; 
+    height: 31px; 
+    top: 100%; 
+    left: 100%; 
+    margin-top:-52px;
+    margin-left:-88px;
+}
+.corner p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
