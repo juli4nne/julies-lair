@@ -1,5 +1,5 @@
-function toggleDropdown() {
-    const content = document.getElementById("themeDropdown");
+function toggleDropdown(id) {
+    const content = document.getElementById(id);
 
     if (content.classList.contains('show')) {
         content.classList.remove('show');
