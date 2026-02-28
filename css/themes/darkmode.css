@@ -3,9 +3,11 @@ body {
 }
 .container {
     background-color: #161616;
+    box-shadow: none;
 }
 .navbar {
     background-color: #080808;
+    box-shadow: none;
 }
 .navButton {
     background-color: #161616;
@@ -17,10 +19,12 @@ body {
 .content {
     color: whitesmoke;
     background-color: #080808;
+    box-shadow: none;
 }
 .corner {
     color: rgb(153, 153, 153);
     background-color: #00000000;
+    text-shadow: none;
 }
 
 .dropdownContent.show button {
@@ -32,4 +36,8 @@ body {
 .dropdownContent button {
     color: whitesmoke;
     background-color: #080808;
+}
+
+.frieren {
+    display: none;
 }

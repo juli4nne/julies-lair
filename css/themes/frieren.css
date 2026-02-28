@@ -1,0 +1,54 @@
+body {
+    background-color: #080808;
+}
+.container {
+    background-color: #00000000;
+}
+.navbar {
+    background-color: #080808b4;
+}
+.navButton {
+    background-color: #161616b4;
+    color: whitesmoke;
+}
+.navButton:hover {
+    background-color: #333333b4;
+}
+.content {
+    color: whitesmoke;
+    background-color: #080808b4;
+}
+.corner {
+    color: rgb(226, 226, 226);
+    background-color: #00000000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.dropdownContent.show button {
+    background-color: #080808b4;
+}
+.dropdownContent.show button:hover {
+    background-color: #333333b4 !important;
+}
+.dropdownContent button {
+    color: whitesmoke;
+    background-color: #080808b4;
+}
+
+.frieren {
+    display: block;
+}
+
+#defaultIcon {
+    display: none;
+}
+
+#background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -4;
+  filter: blur(4px);
+}

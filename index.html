@@ -13,9 +13,11 @@
     <title>julie's lair</title>
 </head>
 <body>
+    <video autoplay muted loop id="background" class="frieren"><source src="./images/frieren/background.mp4" type="video/mp4"></video>
     <div class="container">
         <div class="navbar">
-            <img src="./images/icon.png" class="icon">
+            <img src="./images/icon.png" class="icon" id="defaultIcon">
+            <img src="./images/frieren/icon.gif" class="icon frieren">
             <button class="navButton">BUTTON</button>
             <button class="navButton">BUTTON</button>
             <div class="dropdown">
@@ -23,7 +25,7 @@
                 <div id="themeDropdown" class="dropdownContent">
                   <button onclick="swapDarkMode()">dark</button>
                   <button onclick="swapLightMode()">light</button>
-                  <button>frieren</button>
+                  <button onclick="swapFrierenTheme()">frieren</button>
                   <button>old internet</button>
                 </div>
             </div>
@@ -31,12 +33,12 @@
         
         <div class="content">
             <p>
-                hiya !! this is my website lol testing testing testing testingtestingtestingtestingtesting
+                hiya !! this is my website lol testing testing testing testingtestingtestingtestingtesting <br><br>this stuff is placeholder until i actually theme it
             </p>
         </div>
     </div>
     <div class="corner">
-        <p>powered by:<a href="https://nekoweb.org/"><img id="nekowebStamp" src="https://nekoweb.org/assets/buttons/button5.gif"></a></p>
+        <p>powered by:<a href="https://nekoweb.org/"><img id="nekowebStamp" src=""></a></p>
     </div>
 </body>
 </html>

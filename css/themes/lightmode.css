@@ -2,13 +2,15 @@ body {
     background-color: #F7F7F7;
 }
 .container {
-    background-color: #E9E9E9;
+    background-color: #DBDBDB;
+    box-shadow: 0px 0px 2px #000000a8;
 }
 .navbar {
     background-color: #F7F7F7;
+    box-shadow: 0px 0px 2px #000000a8; 
 }
 .navButton {
-    background-color: #E9E9E9;
+    background-color: #DBDBDB;
     color: #0A0A0A;
 }
 .navButton:hover {
@@ -17,10 +19,12 @@ body {
 .content {
     color: #0A0A0A;
     background-color: #F7F7F7;
+    box-shadow: 0px 0px 2px #000000a8; 
 }
 .corner {
     color: rgb(54, 54, 54);
     background-color: #00000000;
+    text-shadow: none;
 }
 
 .dropdownContent.show button {
@@ -32,4 +36,8 @@ body {
 .dropdownContent button {
     color: #0A0A0A;
     background-color: #F7F7F7;
+}
+
+.frieren {
+    display: none;
 }
