@@ -23,13 +23,13 @@ body {
     background-color: #00000000;
 }
 
-.dropdown-content.show button {
+.dropdownContent.show button {
     background-color: #EEEEEE;
 }
-.dropdown-content.show button:hover {
+.dropdownContent.show button:hover {
     background-color: #CCCCCC;
 }
-.dropdown-content button {
+.dropdownContent button {
     color: #0A0A0A;
     background-color: #F7F7F7;
 }
