@@ -56,4 +56,8 @@ function swapFrierenTheme() {
     const width = element.offsetWidth;
 } 
 
+function github() {
+    window.open("https://github.com/juli4nne", "_blank");
+}
+
 window.onload = randomNekoStamp;
