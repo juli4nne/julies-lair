@@ -47,10 +47,8 @@
     position: fixed; 
     width: 88px; 
     height: 31px; 
-    top: 100%; 
-    left: 100%; 
-    margin-top:-52px;
-    margin-left:-88px;
+    bottom: calc(1vh + 17px);
+    right: calc(1vw - 5px);
 }
 .corner p {
     display: flex;

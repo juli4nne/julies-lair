@@ -30,9 +30,9 @@
 
 .show {
     display: block;
-    max-height: 120px;
+    max-height: 160px;
     box-shadow: none;
-    height: 120px;
+    height: 160px;
 }
 .dropdownContent.show button:nth-child(1) { 
     z-index: 3;
@@ -50,8 +50,14 @@
     z-index: 1;
     transform: translateY(80px);
     transition: transform 0.3s cubic-bezier(0.3, 0, 1, 1);
-    border-radius: 0 0 15px 15px;
     transition-delay: 0.2s;
+}
+.dropdownContent.show button:nth-child(4) {
+    z-index: 0;
+    transform: translateY(120px);
+    transition: transform 0.4s cubic-bezier(0.3, 0, 1, 1);
+    border-radius: 0 0 15px 15px;
+    transition-delay: 0.3s;
 }
 
 .dropdown > .navButton {
