@@ -9,17 +9,18 @@
     display: flex;
     gap: 20px;
     align-items: flex-start;
+    flex-direction: column;
 }
 .navbar {
     display: flex;
     flex-direction: column;
     padding: 20px;
     border-radius: 30px;
-    max-width: 150px;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .navButton {
-    width: 150px;
+    width: calc(100vw - 98px);
     height: 50px;
     border-radius: 15px;
     border: none;
@@ -29,7 +30,7 @@
     border-radius: 25px;
     overflow: hidden;
     padding: 10px;
-    width: 100%;
+    width: calc(100vw - 78px);
     height: fit-content;
     background-repeat: no-repeat;
     background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
@@ -44,7 +45,7 @@
 }
 .icon {
     border-radius: 30px;
-    max-width: 150px;
+    max-width: 50px;
 }
 .corner {
     position: fixed; 
