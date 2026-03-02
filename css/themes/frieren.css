@@ -43,7 +43,7 @@ body {
     display: none;
 }
 
-#background {
+.background {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -51,6 +51,12 @@ body {
   min-height: 100%;
   z-index: -4;
   filter: blur(4px);
+}
+#bgImageFrieren {
+    z-index: -10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 #frierenCredit {
     bottom: min(calc(1vh - 15px), 10%);
