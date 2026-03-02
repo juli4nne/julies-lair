@@ -1,4 +1,4 @@
-*, *::before, *::after {
+body, button {
     font-family: ms gothic, "ms gothic alt", monospace;
 }
 .container {
@@ -42,6 +42,11 @@
     margin-left: 15px;
     margin-right: 15px;
 }
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
 .icon {
     border-radius: 30px;
     max-width: 150px;
@@ -62,4 +67,9 @@
 }
 .frieren {
     display: none;
+}
+h1, h2, h3 {
+  font-family: "DotGothic16", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
 }
