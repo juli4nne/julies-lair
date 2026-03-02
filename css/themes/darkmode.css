@@ -52,19 +52,19 @@ body {
 .title {
     font-family: dotgothic16;
     font-size: 70px;
-    margin-top: 0px;
+    margin-top: -10px;
     margin-bottom: 0px;
 }
 
 /* from https://prismic.io/blog/css-text-animations */
 .waveText span {
     display: inline-block;
-    font-size: 4rem;
+    font-size: min(4rem, 10vw);
     animation: wave 2s ease-in-out infinite;
 }
 .waveText2 span {
     display: inline-block;
-    font-size: 4rem;
+    font-size: min(4rem, 10vw);
     animation: wave 2s ease-in-out infinite;
 }
 @keyframes wave {
