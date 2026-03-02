@@ -15,6 +15,7 @@
     <link href="./css/dropdown.css" media="(min-width: 850px)" rel="stylesheet">
     
     <link id="theme" href="./css/themes/darkmode.css" rel="stylesheet">
+    <link id="accessibility" href="" rel="stylesheet">
     
     <script src="./scripts/code.js"></script>
     <title>julie's lair</title>
@@ -22,42 +23,49 @@
 <body>
     <video autoplay muted loop id="background" class="frieren"><source src="./images/frieren/background.webm" type="video/mp4"></video>
     <div class="container">
-        <div class="navbar">
-            <img src="./images/icon.png" class="icon" id="defaultIcon">
-            <img src="./images/frieren/icon.gif" class="icon frieren">
+        <div class="navbar" role="navigation">
+            <img src="./images/icon.webp" class="icon" id="defaultIcon" alt="github profile picture as site icon">
+            <img src="./images/frieren/icon.gif" class="icon frieren" alt="gif of titular character frieren">
             <button class="navButton" onclick="github()">github</button>
-            <button class="navButton">BUTTON</button>
+            <button class="navButton">projects</button>
             <div class="dropdown">
                 <button onclick="toggleDropdown('themeDropdown')" class="navButton">themes</button>
                 <div id="themeDropdown" class="dropdownContent">
                   <button onclick="swapDarkMode()">dark</button>
                   <button onclick="swapLightMode()">light</button>
                   <button onclick="swapFrierenTheme()">frieren</button>
-                  <button>old internet</button>
+                  <button>2000's</button>
                 </div>
             </div>
+            <button class="navButton" onclick="accessibilityToggle()" id="accessibilityButton">accessibility toggle</button>
         </div>
         
         <div class="main">
-            <img>
-            <div class="content">
-                <h2 class="dotgothic16-regular"><u>about me</u></h2>
+            <div class="header" role="banner">
+                <img src="./images/frieren/zoltraak.gif" class="frieren" id="zoltraak" alt="gif of zoltraak spell from frieren">
+                <p class="noFrieren title waveText"><span>j</span><span>u</span><span>l</span><span>i</span><span>e</span><span>'</span><span>s</span></p>
+                <p class="noFrieren title waveText2"><span> </span><span>l</span><span>a</span><span>i</span><span>r</span></p>
+                <p class="frieren title">julie's lair</p>
+            </div>
+            <div class="content" role="main">
+                <p>hiya !! welcome to my website. i have a few links here to my github and to some more in depth descriptions of my projects. this website was primarily for fun so if i think of something else to put on here, i will.</p>
+                <h2><u>about me</u></h2>
                 <p>
-                    hiya !! welcome to my website. my name is julie and im an aspiring SWE/network systems professional.
+                    my name is julie and im an aspiring SWE/network systems professional.
                     <br><br>
                     i have varying experience with python, rust, php, html/css, javascript, java, sql, and my strongest suit is c/c++.
                     <br><br>
                     currently i'd like to expand my knowledge of languages i already know some of, but i'm also looking to learn c# sometime soon. since i'd like to work on networks, i think learning legacy languages such as fortran would be a fun side project.
                     <br><br>
-                    most of my projects are me just messing around trying to learn programming langauges, so they arent published, but there are a few available on my github (see button in navbar).
+                    most of my projects are me just messing around trying to learn programming langauges, so they aren't published, but there are a few available on my github (see button in navbar). i have helped in the creation of full stack applications, particularly in api endpoints.
                     <br><br>
-                    currently i'm working on a to be determined project involving flutter, mongodb, js apis, and a frontend website.
+                    currently i'm working on a to be determined (probably audio content delivery) project involving flutter, mongodb, js apis, and a frontend website.
                 </p>
             </div>
         </div>
     </div>
     <div class="corner">
-        <p>powered by:<a href="https://nekoweb.org/"><img id="nekowebStamp" src=""></a></p>
+        <p id="powered">powered by:<a href="https://nekoweb.org/"><img id="nekowebStamp" src="" alt="nekoweb (service provider) stamp"></a></p>
     </div>
     <div class="corner frieren" id="frierenCredit">
         <p>bg: Amazing Shots yt</p>

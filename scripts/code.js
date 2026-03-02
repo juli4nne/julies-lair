@@ -1,3 +1,5 @@
+let accessibilityToggleVar = 0;
+
 function toggleDropdown(id) {
     const content = document.getElementById(id);
 
@@ -53,11 +55,26 @@ function swapLightMode() {
 function swapFrierenTheme() {
     const theme = document.getElementById("theme");
     theme.setAttribute("href", "/css/themes/frieren.css");
+    if(accessibilityToggleVar === 1) {
+        accessibilityToggle();
+    } else {
     const width = element.offsetWidth;
+    }
 } 
 
 function github() {
     window.open("https://github.com/juli4nne", "_blank");
 }
+function accessibilityToggle() {
+    const accessible = document.getElementById("accessibility");
+    if(accessibilityToggleVar === 0) {
+        accessible.setAttribute("href", "/css/accessible.css");
+        accessibilityToggleVar = 1;
+    } else {
+        accessible.setAttribute("href", "");
+        accessibilityToggleVar = 0;
+    }
+    const width = element.offsetWidth;
+} 
 
 window.onload = randomNekoStamp;
