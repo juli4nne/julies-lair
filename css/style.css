@@ -1,4 +1,8 @@
-body, button, p {
+body {
+    font-family: ms gothic, "ms gothic alt", monospace;
+    display: none;
+}
+button, p {
     font-family: ms gothic, "ms gothic alt", monospace;
 }
 .container {

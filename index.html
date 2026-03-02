@@ -13,14 +13,73 @@
     <link href="./css/dropdown_mobile.css" media="(max-width: 850px)" rel="stylesheet">
     <link href="./css/style.css" media="(min-width: 850px)" rel="stylesheet">
     <link href="./css/dropdown.css" media="(min-width: 850px)" rel="stylesheet">
+    <link id="popup" href="./css/popup.css" rel="stylesheet">
     
     <link id="theme" href="./css/themes/darkmode.css" rel="stylesheet">
     <link id="accessibility" href="" rel="stylesheet">
+
+    <script>
+        (function() {
+            function getCookie(cname) {
+                let name = cname + "=";
+                let ca = document.cookie.split(';');
+                for(let i = 0; i < ca.length; i++) {
+                    let c = ca[i].trim();
+                    if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+                }
+                return "";
+            }
+
+            const theme = getCookie("theme");
+            if (theme) {
+                const themeElement = document.getElementById("theme");
+                if (theme === "darkmode") themeElement.href = "./css/themes/darkmode.css";
+                else if (theme === "lightmode") themeElement.href = "./css/themes/lightmode.css";
+                else if (theme === "frieren") themeElement.href = "/css/themes/frieren.css";
+                const popup = document.getElementById("popup");
+                popup.href = "./css/popup_hidden.css";
+            }
+        })();
+    </script>
     
     <script src="./scripts/code.js"></script>
     <title>julie's lair</title>
 </head>
 <body>
+    <div class="themePopup" id="themeBox">
+        <div id="popupDiv">
+            <p>please select a theme (can be changed later via navbar):</p>
+            <div id="themeSplit">
+                <div class="themeTitle">
+                    <p>accessible themes:</p>
+                    <div id="themesDiv">
+                        <div class="perThemeDiv" onclick="swapDarkMode()">
+                            <img class="themeImg" src="./images/darkmode.webp">
+                            <button class="navButton">dark mode</button>
+                        </div>
+                        <div class="perThemeDiv" onclick="swapLightMode()">
+                            <img class="themeImg" src="./images/lightmode.webp">
+                            <button class="navButton">light mode</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="themeTitle">
+                    <p>fun themes:</p>
+                    <div id="themesDiv">
+                        <div class="perThemeDiv" onclick="swapFrierenTheme()">
+                            <img class="themeImg" src="./images/frierentheme.webp">
+                            <button class="navButton">frieren</button>
+                        </div>
+                        <div class="perThemeDiv">
+                            <img class="themeImg" src="./images/comingsoon.webp">
+                            <button class="navButton">coming soon</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <img class="frieren background" src="./images/frieren/backup_background.webp" id="bgImageFrieren">
     <video autoplay muted loop class="frieren background"><source src="./images/frieren/background.webm" type="video/webm" autoplay muted loop playsinline webkit-playsinline="true" controlslist="nodownload"></video>
     <div class="container">
@@ -35,7 +94,7 @@
                   <button onclick="swapDarkMode()">dark</button>
                   <button onclick="swapLightMode()">light</button>
                   <button onclick="swapFrierenTheme()">frieren</button>
-                  <button>2000's</button>
+                  <button>coming soon</button>
                 </div>
             </div>
             <button class="navButton" onclick="accessibilityToggle()" id="accessibilityButton">accessibility toggle</button>

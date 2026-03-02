@@ -40,26 +40,64 @@ function randomNekoStamp() {
         case 10: image.setAttribute("src", "https://nekoweb.org/assets/buttons/button10.png"); break;
         case 11: image.setAttribute("src", "https://nekoweb.org/assets/buttons/button11.gif"); break;
     }
+}   
+
+// from https://www.w3schools.com/js/js_cookies.asp
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+
+function themeCookie() {
+    let themeCookie = getCookie("theme");
+    let themebox = document.getElementById("themeBox");
+    if (themeCookie == "darkmode") {
+        swapDarkMode();
+        themebox.remove();
+    } else if (themeCookie == "lightmode") {
+        swapLightMode();
+        themebox.remove();
+    } else if (themeCookie == "frieren") {
+        swapFrierenTheme();
+        themebox.remove();
+    }
 }
 
 function swapDarkMode() {
     const theme = document.getElementById("theme");
-    theme.setAttribute("href", "./css/themes/darkmode.css");
-    const width = element.offsetWidth;
+    let themebox = document.getElementById("themeBox");
+    theme.href = "./css/themes/darkmode.css";
+    document.cookie = "theme=darkmode";
+    themebox.remove();
 }
 function swapLightMode() {
     const theme = document.getElementById("theme");
-    theme.setAttribute("href", "./css/themes/lightmode.css");
-    const width = element.offsetWidth;
+    let themebox = document.getElementById("themeBox");
+    theme.href = "./css/themes/lightmode.css";
+    document.cookie = "theme=lightmode";
+    themebox.remove();
 }
 function swapFrierenTheme() {
     const theme = document.getElementById("theme");
-    theme.setAttribute("href", "/css/themes/frieren.css");
+    let themebox = document.getElementById("themeBox");
+    theme.href = "/css/themes/frieren.css";
+    document.cookie = "theme=frieren";
     if(accessibilityToggleVar === 1) {
         accessibilityToggle();
-    } else {
-    const width = element.offsetWidth;
     }
+    themebox.remove();
 } 
 
 function github() {
@@ -77,4 +115,7 @@ function accessibilityToggle() {
     const width = element.offsetWidth;
 } 
 
-window.onload = randomNekoStamp;
+window.addEventListener('load', () => {
+    randomNekoStamp();
+    document.body.style.display = 'block';
+});
