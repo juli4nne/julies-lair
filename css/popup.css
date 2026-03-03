@@ -20,6 +20,21 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
+}
+.themePopup * {
+   padding: 5px;
+}
+#guidance {
+    margin-bottom: 0px;
+}
+.themeButton {
+    max-width: 120px;
+    width: 20vw;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    transition: background-color 0.1s ease;
 }
 #themesDiv {
     display: flex;
