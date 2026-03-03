@@ -103,6 +103,13 @@ function swapFrierenTheme() {
 function github() {
     window.open("https://github.com/juli4nne", "_blank");
 }
+function projects(){
+    const projectText = document.getElementById("projectButton");
+    projectText.innerHTML = "coming soon";
+    setTimeout(function() {
+        projectText.innerHTML = "projects";
+    }, 3000);
+}
 function accessibilityToggle() {
     const accessible = document.getElementById("accessibility");
     if(accessibilityToggleVar === 0) {

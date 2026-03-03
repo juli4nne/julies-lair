@@ -46,6 +46,7 @@
     <title>julie's lair</title>
 </head>
 <body>
+    <!-- initial no-cookie theme popup -->
     <div class="themePopup" id="themeBox">
         <div id="popupDiv">
             <p id="guidance">please select a theme (can be changed later via navbar):</p>
@@ -80,14 +81,21 @@
         </div>
     </div>
 
+
+    <!-- main content -->
+     <!-- background content -->
     <img class="frieren background" src="./images/frieren/backup_background.webp" id="bgImageFrieren">
     <video autoplay muted loop class="frieren background"><source src="./images/frieren/background.webm" type="video/webm" autoplay muted loop playsinline webkit-playsinline="true" controlslist="nodownload"></video>
+    
+    <!-- main container -->
     <div class="container">
+        <!-- navbar -->
         <div class="navbar" role="navigation">
             <img src="./images/icon.webp" class="icon" id="defaultIcon" alt="github profile picture as site icon">
             <img src="./images/frieren/icon.gif" class="icon frieren" alt="gif of titular character frieren">
             <button class="navButton" onclick="github()">github</button>
-            <button class="navButton">projects</button>
+            <button class="navButton" id="projectButton" onclick="projects()">projects</button>
+            <!-- theme dropdown -->
             <div class="dropdown">
                 <button onclick="toggleDropdown('themeDropdown')" class="navButton">themes</button>
                 <div id="themeDropdown" class="dropdownContent">
@@ -100,6 +108,7 @@
             <button class="navButton" onclick="accessibilityToggle()" id="accessibilityButton">accessibility toggle</button>
         </div>
         
+        <!-- content box -->
         <div class="main">
             <div class="header" role="banner">
                 <img src="./images/frieren/zoltraak.gif" class="frieren" id="zoltraak" alt="gif of zoltraak spell from frieren">
