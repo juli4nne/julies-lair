@@ -35,6 +35,11 @@
     border-radius: 15px;
     border: none;
     transition: background-color 0.1s ease;
+    background-color: #161616;
+    color: whitesmoke;
+}
+.themeButton:hover {
+    background-color: #333333;
 }
 #themesDiv {
     display: flex;
