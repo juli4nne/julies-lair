@@ -1,0 +1,103 @@
+body {
+    font-family: ms gothic, "ms gothic alt", monospace;
+    display: none;
+}
+button, p {
+    font-family: ms gothic, "ms gothic alt", monospace;
+}
+.container {
+    margin: auto;
+    padding: 20px;
+    border-radius: 30px;
+    max-width: max(1000px, 70%);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.navButton {
+    width: calc(100vw - 98px);
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    transition: background-color 0.1s ease;
+}
+.content {
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 10px;
+    width: calc(100vw - 100px);
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+    background-attachment: local, local, scroll, scroll;
+    word-wrap: break-word;
+    align-items: top;
+    display: inline-block;
+}
+.content * {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+}
+.icon {
+    border-radius: 30px;
+    max-width: 50px;
+}
+.corner {
+    position: fixed; 
+    width: 88px; 
+    height: 31px; 
+    bottom: calc(1vh + 17px);
+    right: calc(1vw - 5px);
+}
+.corner p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
+#powered {
+    width: 100px;
+}
+.frieren {
+    display: none;
+}
+h1, h2, h3 {
+  font-family: "DotGothic16", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+.header {
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+#zoltraak {
+    width: 70px;
+}
+ @font-face { 
+    font-family: Frieren; 
+    src: url('FrierenLaBelle-rv56L.otf'); 
+} 
+ @font-face { 
+    font-family: Frieren; 
+    font-weight: bold; 
+    src: url('FrierenLaBelle-rv56L.otf');
+}

@@ -1,0 +1,19 @@
+*, *::before, *::after {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+body, p, h1, h2, h3, button{
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.dropdownContent.show button {
+    font-size: large !important;
+}
+.waveText span {
+    display: inline-block;
+    font-size: 4rem;
+    animation: none;
+}
+.waveText2 span {
+    display: inline-block;
+    font-size: 4rem;
+    animation: none;
+}

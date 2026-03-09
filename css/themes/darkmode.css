@@ -1,0 +1,114 @@
+body {
+    background-color: #080808;
+}
+.container {
+    background-color: #161616;
+    box-shadow: none;
+}
+.navbar {
+    background-color: #080808;
+    box-shadow: none;
+}
+.navButton {
+    background-color: #161616;
+    color: whitesmoke;
+}
+.navButton:hover {
+    background-color: #333333;
+}
+.content {
+    color: whitesmoke;
+    background-color: #080808;
+    box-shadow: none;
+}
+.corner {
+    color: rgb(153, 153, 153);
+    background-color: #00000000;
+    text-shadow: none;
+}
+
+.dropdownContent.show button {
+    background-color: #111111;
+}
+.dropdownContent.show button:hover {
+    background-color: #333333 !important;
+}
+.dropdownContent button {
+    color: whitesmoke;
+    background-color: #080808;
+}
+
+.frieren {
+    display: none;
+}
+
+.header {
+    color: whitesmoke;
+    background-color: #080808;
+    box-shadow: none;
+    margin-top: -19px;
+    gap: 30px;
+}
+.title {
+    font-family: dotgothic16;
+    font-size: 70px;
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
+
+/* from https://prismic.io/blog/css-text-animations */
+.waveText span {
+    display: inline-block;
+    font-size: min(4rem, 10vw);
+    animation: wave 2s ease-in-out infinite;
+}
+.waveText2 span {
+    display: inline-block;
+    font-size: min(4rem, 10vw);
+    animation: wave 2s ease-in-out infinite;
+}
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+.waveText span:nth-child(1) {
+    animation-delay: 0s;
+}
+.waveText span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.waveText span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.waveText span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.waveText span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.waveText span:nth-child(6) {
+    animation-delay: 1s;
+}
+.waveText span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+.waveText2 span:nth-child(1) {
+    animation-delay: 1.4s;
+}
+.waveText2 span:nth-child(2) {
+    animation-delay: 1.6s;
+}
+.waveText2 span:nth-child(3) {
+    animation-delay: 1.8s;
+}
+.waveText2 span:nth-child(4) {
+    animation-delay: 2s;
+}
+.waveText2 span:nth-child(5) {
+    animation-delay: 2.2s;
+}

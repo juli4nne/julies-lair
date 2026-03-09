@@ -1,0 +1,79 @@
+.themePopup {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #232323;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    top: 0;
+    left: 0;
+}
+.themePopup p {
+    z-index: 11;
+}
+#popupDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.themePopup * {
+   padding: 5px;
+}
+#guidance {
+    margin-bottom: 0px;
+}
+.themeButton {
+    max-width: 120px;
+    width: 20vw;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    transition: background-color 0.1s ease;
+    background-color: #161616;
+    color: whitesmoke;
+}
+.themeButton:hover {
+    background-color: #333333;
+}
+#themesDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.perThemeDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#themeSplit {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.themeTitle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.themeImg {
+    border-radius: 10px;
+    max-width: 170px;
+    width: 20vw;
+}
